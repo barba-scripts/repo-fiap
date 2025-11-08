@@ -1,0 +1,14 @@
+{
+  "name": "fiap-next-on-infomoney",
+  "version": "1.0.0",
+  "description": "Site estático InfoMoney FIAP NEXT ON",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
