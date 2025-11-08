@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Fabio Silva",
+    "hasSuitability": false,
+    "ticketMedio": "R$ 320,00",
+    "missoes": 4
+  },
+  {
+    "id": 2,
+    "name": "Mariana Costa",
+    "hasSuitability": true,
+    "ticketMedio": "R$ 210,00",
+    "missoes": 7
+  },
+  {
+    "id": 3,
+    "name": "Ricardo Gomes",
+    "hasSuitability": false,
+    "ticketMedio": "R$ 150,00",
+    "missoes": 2
+  },
+  {
+    "id": 4,
+    "name": "Ana Paula",
+    "hasSuitability": true,
+    "ticketMedio": "R$ 460,00",
+    "missoes": 10
+  },
+  {
+    "id": 5,
+    "name": "Lucas Andrade",
+    "hasSuitability": false,
+    "ticketMedio": "R$ 280,00",
+    "missoes": 3
+  }
+]

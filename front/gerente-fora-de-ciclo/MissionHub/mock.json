@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuUir43v4gPbeDEzrddYw1fXOy59U0i7iU7A&s",
+            "name": "Paula Correa"
+        },
+        {
+            "photo": "https://images.pexels.com/photos/2328141/pexels-photo-2328141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "name": "Bruno Silva"
+        },
+        {
+            "photo": "https://images.media.io/images2023/colorize-photos/banner-after.png",
+            "name": "Cátia Almeida"
+        },
+        {
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzPqHK4Zh6F-n_ISAE6WvP8IqCAf0d7_hcsw&s",
+            "name": "Roberto Ferreira"
+        }
+    ]
+}

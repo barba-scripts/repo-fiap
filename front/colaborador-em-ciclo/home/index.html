@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Missões • Swift-Style</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css" />
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="scripts.js" defer></script>
+</head>
+
+<body>
+   <div class="container">
+      <header>
+         <nav>
+            <button class="icon-button outline" onclick="history.back()">
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+                  <path d="M11.3337 5H0.666992M0.666992 5L4.66699 9M0.666992 5L4.66699 1" stroke="currentColor"
+                     stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+            </button>
+            <button class="icon-button normal" onclick="window.location='../menu/index.html'">
+               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 8H14M2 4H14M2 12H14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                     stroke-linejoin="round" />
+               </svg>
+            </button>
+         </nav>
+      </header>
+      <main>
+         <div id="heading">
+            <h1 id="greeting">Boa tarde, Renata!</h1>
+         </div>
+         <div id="empty" class="empty" hidden>
+            <p class="ok-title">Tudo em dia!</p>
+            <p class="muted">Você não tem missões pendentes.</p>
+         </div>
+         <div id="tableWrap" class="table-container" hidden>
+            <table id="mission-table">
+               <thead>
+                  <tr>
+                     <th>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                           <path
+                              d="M13.3337 14C13.3337 13.0696 13.3337 12.6044 13.2188 12.2259C12.9603 11.3736 12.2934 10.7067 11.4411 10.4482C11.0626 10.3333 10.5974 10.3333 9.66699 10.3333H6.33366C5.40328 10.3333 4.9381 10.3333 4.55956 10.4482C3.7073 10.7067 3.04035 11.3736 2.78182 12.2259C2.66699 12.6044 2.66699 13.0696 2.66699 14M11.0003 5C11.0003 6.65685 9.65718 8 8.00033 8C6.34347 8 5.00033 6.65685 5.00033 5C5.00033 3.34315 6.34347 2 8.00033 2C9.65718 2 11.0003 3.34315 11.0003 5Z"
+                              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Missão</span>
+                     </th>
+                     <th>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                           <path
+                              d="M5.33398 8.66671V11.3334M10.6673 7.33337V11.3334M8.00065 4.66671V11.3334M14.6673 8.00004C14.6673 11.6819 11.6826 14.6667 8.00065 14.6667C4.31875 14.6667 1.33398 11.6819 1.33398 8.00004C1.33398 4.31814 4.31875 1.33337 8.00065 1.33337C11.6826 1.33337 14.6673 4.31814 14.6673 8.00004Z"
+                              stroke="#64748B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Status</span>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody id="missionRows"></tbody>
+               <tfoot>
+                  <tr>
+                     <td colspan="2">
+                        <div class="d-flex justify-content-between">
+                           <span>Total</span>
+                           <span id="totalCount">0 missões</span>
+                        </div>
+                     </td>
+                  </tr>
+               </tfoot>
+            </table>
+         </div>
+      </main>
+   </div>
+
+   <div id="modal-mission" class="modal-overlay">
+      <div class="modal-content">
+         <div class="d-flex justify-content-between">
+            <button id="edit" class="icon-button outline">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                     d="M7.99998 13.3333H14M2 13.3333H3.11636C3.44248 13.3333 3.60554 13.3333 3.75899 13.2964C3.89504 13.2638 4.0251 13.2099 4.1444 13.1368C4.27895 13.0543 4.39425 12.939 4.62486 12.7084L13 4.33328C13.5523 3.781 13.5523 2.88557 13 2.33328C12.4477 1.781 11.5523 1.781 11 2.33328L2.62484 10.7084C2.39424 10.939 2.27894 11.0543 2.19648 11.1889C2.12338 11.3082 2.0695 11.4383 2.03684 11.5743C2 11.7278 2 11.8908 2 12.2169V13.3333Z"
+                     stroke="#0F172A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+            </button>
+
+            <button class="close icon-button ghost">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M12 4L4 12M4 4L12 12" stroke="#0F172A" stroke-width="1.2" stroke-linecap="round"
+                     stroke-linejoin="round" />
+               </svg>
+            </button>
+         </div>
+         <div class="m-header">
+            <h1 id="sheetTitle">Nome da missão</h1>
+            <button id="sheetStatus" class="badge-status yellow active w-auto">In Progress</button>
+         </div>
+         <div class="m-body">
+            <p id="sheetDesc">Descrição da missão</p>
+            <div class="d-flex justify-content-between">
+               <p>Métrica a ser desenvolvida</p>
+               <button id="sheetLevel" class="badge active">Nível 1</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

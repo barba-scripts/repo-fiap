@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Dashboard • Swift-Style</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <div class="app">
+         <div class="topbar">
+            <button aria-label="Abrir menu" class="menu" onclick="window.location='../menu/index.html'"><span></span></button>
+         </div>
+         <h1 id="greeting">Boa tarde, Renata!</h1>
+         <section class="store-card" aria-label="Loja selecionada">
+            <img class="brand-logo" src="images/logo.png" alt="Swift" />
+            <div>
+               <div class="muted">Loja Freguesia do Ó</div>
+            </div>
+         </section>
+         <h2 class="section-title">Lista de Missões</h2>
+         <ul class="mission-list" id="missionList" aria-label="Lista de missões"></ul>
+         <div class="totals-row">
+            <span>Total</span>
+            <span id="totalColabs">0 colaboradores</span>
+         </div>
+         <h2 class="section-title">Resultados</h2>
+         <p class="muted small">Dashboard</p>
+         <div class="kpis">
+            <div class="kpi">
+               <p class="kpi-title">Missões Concluídas</p>
+               <p class="kpi-value" id="kpiDone">0</p>
+            </div>
+            <div class="kpi">
+               <p class="kpi-title">Missões Não Concluídas</p>
+               <p class="kpi-value" id="kpiNotDone">0</p>
+            </div>
+         </div>
+         <div class="card">
+            <p class="card-title">Visão Geral das Missões</p>
+            <div class="chart-wrap">
+               <canvas id="donut" width="220" height="220" aria-label="Gráfico de rosca"></canvas>
+               <ul class="legend">
+                  <li><span class="dot done"></span> Concluídas</li>
+                  <li><span class="dot not"></span> Não Concluídas</li>
+               </ul>
+            </div>
+         </div>
+         <div class="card">
+            <p class="card-title">Missões por Funcionário</p>
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th>Funcionário</th>
+                     <th>Missões Concluídas</th>
+                  </tr>
+               </thead>
+               <tbody id="tableBody"></tbody>
+            </table>
+         </div>
+      </div>
+
+      <script src="scripts.js"></script>
+</html>

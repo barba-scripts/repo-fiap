@@ -1,0 +1,92 @@
+{
+    "name": "Bruno Silva",
+    "questions": [
+        {
+            "question": "Como você avalia o comprometimento desse colaborador com suas responsabilidades?",
+            "answerType": "single",
+            "options": [
+                "Muito baixo",
+                "Baixo",
+                "Adequado",
+                "Alto",
+                "Muito alto"
+            ]
+        },
+        {
+            "question": "Como está o domínio desse colaborador sobre os produtos e soluções da loja?",
+            "answerType": "single",
+            "options": [
+                "Muito abaixo do esperado",
+                "Abaixo do esperado",
+                "Dentro do esperado",
+                "Acima do esperado",
+                "Excelente"
+            ]
+        },
+        {
+            "question": "Avalie a capacidade desse colaborador em atender o cliente com cordialidade e empatia.",
+            "answerType": "single",
+            "options": [
+                "Muito ruim",
+                "Ruim",
+                "Regular",
+                "Bom",
+                "Excelente"
+            ]
+        },
+        {
+            "question": "Qual é o nível de autonomia desse colaborador nas rotinas diárias?",
+            "answerType": "single",
+            "options": [
+                "Quase nenhuma autonomia",
+                "Precisa de supervisão constante",
+                "Executa bem com orientação",
+                "Autônomo na maior parte do tempo",
+                "Totalmente autônomo"
+            ]
+        },
+        {
+            "question": "Como você avalia a postura desse colaborador com relação à organização e manutenção da loja?",
+            "answerType": "single",
+            "options": [
+                "Muito abaixo do esperado",
+                "Abaixo do esperado",
+                "Dentro do esperado",
+                "Acima do esperado",
+                "Excelente"
+            ]
+        },
+        {
+            "question": "Como esse colaborador lida com feedbacks?",
+            "answerType": "single",
+            "options": [
+                "Resistente e não aplica",
+                "Aceita, mas aplica pouco",
+                "Aceita e aplica parcialmente",
+                "Aceita bem e aplica",
+                "Procura feedbacks ativamente"
+            ]
+        },
+        {
+            "question": "Como você avalia o ritmo de aprendizado desse colaborador?",
+            "answerType": "single",
+            "options": [
+                "Abaixo de 50",
+                "Entre 50 e 69",
+                "Entre 70 e 84",
+                "Acima de 85"
+            ]
+        },
+        {
+            "question": "Qual área esse colaborador precisa focar mais no próximo mês?",
+            "answerType": "single",
+            "options": [
+                "Abordagem ao cliente",
+                "Conhecimento técnico dos produtos",
+                "Organização da loja",
+                "Velocidade e agilidade nas tarefas",
+                "Comunicação com o time"
+            ]
+        }
+    ]
+}

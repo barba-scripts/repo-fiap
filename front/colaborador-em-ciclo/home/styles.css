@@ -1,0 +1,263 @@
+@import url("/global.style.css");
+
+body {
+	margin: 0;
+	max-width: calc(100% - 3vh);
+}
+
+#heading h1 {
+	font-size: 32px;
+	font-weight: 800;
+	line-height: 1.15;
+	margin: 28px 0 18px;
+}
+
+#heading h2 {
+	font-size: 22px;
+	font-weight: 800;
+	margin: 28px 0 10px;
+}
+
+.store-card {
+	background: var(--bg-muted-50);
+	border-radius: 14px;
+	padding: 18px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	box-shadow: 0 6px 16px rgba(86, 92, 108, 0.08);
+	margin-bottom: 1rem;
+}
+
+.brand-logo {
+	height: 24px;
+	width: auto;
+	display: block;
+}
+
+.muted {
+	color: var(--muted-foreground);
+}
+
+.empty {
+	margin-top: 12px;
+	padding: 14px 4px;
+}
+
+.ok-title {
+	font-weight: 800;
+	font-size: 20px;
+	margin: 0 0 4px;
+}
+
+tbody {
+	width: 100%;
+}
+
+th,
+td {
+	text-align: left;
+	border-bottom: 1px solid var(--border);
+}
+
+td {
+	min-width: 10.9375rem;
+	height: 3.5rem;
+	padding: 0 0.75rem;
+	font-size: var(--fsize-sm);
+}
+
+td:first-child {
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+th {
+	color: var(--muted-foreground);
+	font-weight: var(--fw-medium);
+	padding: 0.75rem 1rem;
+}
+
+th span {
+	margin: 0 0 0 0.5rem;
+}
+
+table {
+	width: 100%;
+}
+
+.table-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.table-container tbody {
+	display: block;
+	max-height: 50vh;
+	overflow-y: auto;
+}
+
+.table-container thead,
+.table-container tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.table-container tfoot {
+	display: table;
+	width: 100%;
+}
+
+tfoot {
+	td {
+		justify-content: space-between;
+		align-items: center;
+		background-color: var(--bg-muted-50);
+		color: var(--foreground);
+		font-size: var(--fsize-sm);
+		font-weight: var(--fw-medium);
+	}
+}
+
+.status {
+	padding: 0.25rem 0.75rem;
+	border-radius: 624.9375rem;
+	font-weight: var(--fw-semibold);
+	color: var(--primary-foreground);
+	text-transform: capitalize;
+	display: inline-block;
+	min-width: 85px;
+	text-align: center;
+	line-height: 1;
+}
+
+.yellow {
+	background-color: #FDE047;
+}
+
+.green {
+	background-color: #BEF264;
+}
+
+.red {
+	background-color: #F87171;
+}
+
+tbody tr {
+	cursor: pointer;
+}
+
+tbody tr:hover {
+	background-color: var(--bg-muted-50);
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+	border-radius: 1.5rem 1.5rem 0 0;
+	background: var(--card);
+	padding: 1.75rem 1.75rem 2.5rem 1.75rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 100%;
+	transform: translateY(100%);
+	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.show {
+	visibility: visible;
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay.show .modal-content {
+	transform: translateY(0);
+}
+
+.m-header {
+	margin: 1.5rem 0 0 0;
+}
+
+.m-header h1 {
+	font-size: 28px;
+	font-weight: 800;
+	margin: 12px 0;
+}
+
+.m-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+	margin-top: 1rem;
+}
+
+.m-body p {
+	font-size: 18px;
+	line-height: 1.45;
+	margin: 10px 0;
+}
+
+.badge-status {
+	padding: 0.25rem 0.75rem;
+	border-radius: 624.9375rem;
+	font-weight: var(--fw-semibold);
+	color: var(--primary-foreground);
+	text-transform: capitalize;
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+	border: 1px solid var(--border);
+	font-size: var(--fsize-xs);
+}
+
+.badge-status.yellow {
+	background-color: #FDE047;
+}
+
+.badge-status.yellow.active {
+	background: #EAB308;
+}
+
+.badge-status.green {
+	background-color: #BEF264;
+}
+
+.badge-status.green.active {
+	background: #84CC16;
+}
+
+.badge-status.red {
+	background-color: #F87171;
+}
+
+.badge-status.red.active {
+	background: #DC2626;
+}
+
+.badge.active {
+	background-color: var(--primary);
+	color: var(--primary-foreground);
+}
+
+@media (max-width:420px) {
+	#heading h1 {
+		font-size: 28px;
+	}
+}

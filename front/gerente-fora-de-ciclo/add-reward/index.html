@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Recompensa</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<div class="container">
+  <header>
+    <nav>
+      <button class="icon-button outline" onclick="history.back()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+          <path d="M11.3337 5H0.666992M0.666992 5L4.66699 9M0.666992 5L4.66699 1" stroke="currentColor"
+            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="icon-button normal" onclick="window.location='/gerente-fora-de-ciclo/menu/index.html'">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 8H14M2 4H14M2 12H14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <div id="heading">
+      <h1>Adicionar Recompensa</h1>
+      <h2>Adicione recompensas para motivar os colaboradores!</h2>
+    </div>
+    <form action="" onsubmit="submitAwards(event)">
+      <label class="label" for="first-place">1° lugar</label>
+      <input required class="input" type="text" id="first-place" name="first-place" placeholder="Recompensa">
+      <small class="hint">Recompensa que o 1º lugar do ranking recebe</small>
+
+      <label class="label" for="second-place">2° lugar</label>
+      <input required class="input" type="text" id="second-place" name="second-place" placeholder="Recompensa">
+      <small class="hint">Recompensa que o 2º lugar do ranking recebe</small>
+
+      <label class="label" for="third-place">3° lugar</label>
+      <input required class="input" type="text" id="third-place" name="third-place" placeholder="Recompensa">
+      <small class="hint">Recompensa que o 3º lugar do ranking recebe</small>
+
+      <button class="w-100 button normal">Salvar</button>
+    </form>
+  </main>
+</div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>

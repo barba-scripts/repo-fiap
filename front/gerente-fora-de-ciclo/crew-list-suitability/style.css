@@ -1,0 +1,52 @@
+@import url("/global.style.css");
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  min-width: 10.9375rem;
+  height: 3.5rem;
+  padding: 0 0.75rem;
+  font-size: var(--fsize-sm);
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+th {
+  color: var(--muted-foreground);
+  font-weight: var(--fw-medium);
+  padding: 0.75rem 1rem;
+}
+
+th span {
+  margin: 0 0 0 0.5rem;
+}
+
+tfoot {
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red var(--bg-muted-50);
+    color: var(--foreground);
+    font-size: var(--fsize-sm);
+    font-weight: var(--fw-medium);
+  }
+
+  .caption {
+    justify-content: center;
+    color: var(--muted-foreground);
+    font-weight: var(--fw-normal);
+  }
+}
+
+#continueButton {
+  width: 100%;
+}

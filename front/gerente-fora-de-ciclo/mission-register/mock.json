@@ -1,0 +1,92 @@
+{
+    "name": "Fábio Silva",
+    "missions": [
+        {
+            "nivel": 1,
+            "items": [
+                {
+                    "id": "aa1",
+                    "title": "Limpar estacionamento",
+                    "status": "Não iniciado",
+                    "description": "Deve ser feito antes da loja abrir",
+                    "metric": "Disciplina/Atitude de dono",
+                    "nivel": 1
+                }
+            ]
+        },
+        {
+            "nivel": 2,
+            "items": [
+                {
+                    "id": "aa2",
+                    "title": "Abastecer suínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo suíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 2
+                },
+                {
+                    "id": "aa3",
+                    "title": "Abastecer bovínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo bovíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 2
+                },
+                {
+                    "id": "aa4",
+                    "title": "Abastecer bovínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo bovíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 2
+                },
+                {
+                    "id": "aa5",
+                    "title": "Abastecer bovínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo bovíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 2
+                }
+            ]
+        },
+        {
+            "nivel": 3,
+            "items": [
+                {
+                    "id": "aa6",
+                    "title": "Abastecer suínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo suíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 3
+                },
+                {
+                    "id": "aa7",
+                    "title": "Abastecer bovínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo bovíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 3
+                },
+                {
+                    "id": "aa8",
+                    "title": "Abastecer bovínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo bovíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 3
+                },
+                {
+                    "id": "aa9",
+                    "title": "Abastecer bovínos",
+                    "status": "Não iniciado",
+                    "description": "Encher o freezer com os produtos tipo bovíno",
+                    "metric": "Conhecimento dos produtos",
+                    "nivel": 3
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+  "username": "Fábio Silva",
+  "disclaimer": {
+    "image": "logo_swift",
+    "description": "Loja Freguesia do Ó"
+  },
+  "missions": [
+  {
+    "id": 1,
+    "name": "Vender R$500,00 em um único dia",
+    "description": "Essa missão consiste em vender 500 reais em 1 único dia",
+    "status": "inprogress",
+    "nivel": "Nivel 2",
+    "metric": "Vendas"
+  },
+  {
+    "id": 2,
+    "name": "Vender R$100,00 em um único dia",
+    "description": "Essa missão consiste em vender 100 reais em 1 único dia",
+    "status": "done",
+    "nivel": "Nivel 1",
+    "metric": "Vendas"
+  },
+  {
+    "id": 3,
+    "name": "Vender 3 kits ou combos diferentes no mês",
+    "description": "Essa missão consiste em vender 3 kits ou combos diferentes no mesmo mês",
+    "status": "pending",
+    "nivel": "Nivel 2",
+    "metric": "Vendas"
+  },
+  {
+    "id": 4,
+    "name": "Vender produtos de 3 categorias diferentes no mesmo atendimento",
+    "description": "Essa missão consiste em vender produtos de 3 categorias diferentes em um único atendimento",
+    "status": "inprogress",
+    "nivel": "Nivel 3",
+    "metric": "Vendas"
+  },
+  {
+    "id": 5,
+    "name": "Acertar 90% de um quiz de produtos novos",
+    "description": "Essa missão consiste em acertar 90% de um quiz de produtos novos",
+    "status": "done",
+    "nivel": "Nivel 1",
+    "metric": "Treinamento"
+  }
+],
+  "options": [
+    {
+      "title": "Lista de colaboradores",
+      "subtitle": "Acompanhar colaboradores",
+      "action": {
+        "type": "navigate",
+        "screen": "lista_colaboradores"
+      }
+    },
+    {
+      "title": "Criar um Ciclo",
+      "subtitle": "Criar ciclo de controle de metas",
+      "action": {
+        "type": "navigate",
+        "screen": "criar_ciclo_screen1"
+      }
+    }
+  ],
+  "missions_collaborators": {
+    "title": "Lista de Missões",
+    "items": [
+      {
+        "photo": "foto_do_fabio_aqui",
+        "name": "Fábio Souza",
+        "action": {
+          "type": "navigate",
+          "screen": "missionsList",
+          "params": {
+            "user_id": "id_do_fabio_aqui"
+          }
+        }
+      },
+      {
+        "photo": "foto_do_Paulo_aqui",
+        "name": "Paulo Correa",
+        "action": {
+          "type": "navigate",
+          "screen": "missionsList",
+          "params": {
+            "user_id": "id_do_Paulo_aqui"
+          }
+        }
+      },
+      {
+        "photo": "foto_do_Bruno_aqui",
+        "name": "Bruno Silva",
+        "action": {
+          "type": "navigate",
+          "screen": "missionsList",
+          "params": {
+            "user_id": "id_do_Bruno_aqui"
+          }
+        }
+      }
+    ],
+    "total": "3 colaboradores"
+  },
+  "results": {
+    "title": "Resultados",
+    "subtitle": "Dashboard",
+    "image": "imagem_do_grafico"
+  }
+}

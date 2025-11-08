@@ -1,0 +1,86 @@
+[
+  {
+    "question": "Como foi o movimento de clientes neste mês?",
+    "tag": "1/7",
+    "options": [
+      {"name": "Muito Baixo","number": 0,"isFilled": false},
+      {"name": "Baixo","number": 1,"isFilled": false},
+      {"name": "Médio","number": 2,"isFilled": false},
+      {"name": "Alto","number": 3,"isFilled": false},
+      {"name": "Muito Alto","number": 4,"isFilled": false}
+    ],
+    "isLast": false
+  },
+  {
+    "question": "Como você avalia a disponibilidade de produtos na loja?",
+    "tag": "2/7",
+    "options": [
+      {"name": "Muito Baixo","number": 0,"isFilled": false},
+      {"name": "Baixo","number": 1,"isFilled": false},
+      {"name": "Médio","number": 2,"isFilled": false},
+      {"name": "Alto","number": 3,"isFilled": false},
+      {"name": "Muito Alto","number": 4,"isFilled": false}
+    ],
+    "isLast": false
+  },
+  {
+    "question": "O atendimento aos clientes foi satisfatório?",
+    "tag": "3/7",
+    "options": [
+      {"name": "Muito Baixo","number": 0,"isFilled": false},
+      {"name": "Baixo","number": 1,"isFilled": false},
+      {"name": "Médio","number": 2,"isFilled": false},
+      {"name": "Alto","number": 3,"isFilled": false},
+      {"name": "Muito Alto","number": 4,"isFilled": false}
+    ],
+    "isLast": false
+  },
+  {
+    "question": "O ambiente da loja está agradável?",
+    "tag": "4/7",
+    "options": [
+      {"name": "Muito Baixo","number": 0,"isFilled": false},
+      {"name": "Baixo","number": 1,"isFilled": false},
+      {"name": "Médio","number": 2,"isFilled": false},
+      {"name": "Alto","number": 3,"isFilled": false},
+      {"name": "Muito Alto","number": 4,"isFilled": false}
+    ],
+    "isLast": false
+  },
+  {
+    "question": "A sinalização da loja é adequada?",
+    "tag": "5/7",
+    "options": [
+      {"name": "Muito Baixo","number": 0,"isFilled": false},
+      {"name": "Baixo","number": 1,"isFilled": false},
+      {"name": "Médio","number": 2,"isFilled": false},
+      {"name": "Alto","number": 3,"isFilled": false},
+      {"name": "Muito Alto","number": 4,"isFilled": false}
+    ],
+    "isLast": false
+  },
+  {
+    "question": "Você recomendaria nossa loja a amigos?",
+    "tag": "6/7",
+    "options": [
+      {"name": "Muito Baixo","number": 0,"isFilled": false},
+      {"name": "Baixo","number": 1,"isFilled": false},
+      {"name": "Médio","number": 2,"isFilled": false},
+      {"name": "Alto","number": 3,"isFilled": false},
+      {"name": "Muito Alto","number": 4,"isFilled": false}
+    ],
+    "isLast": false
+  },
+  {
+    "question": "De forma geral, como você avalia a loja?",
+    "tag": "7/7",
+    "options": [
+      {"name": "Muito Baixo","number": 0,"isFilled": false},
+      {"name": "Baixo","number": 1,"isFilled": false},
+      {"name": "Médio","number": 2,"isFilled": false},
+      {"name": "Alto","number": 3,"isFilled": false},
+      {"name": "Muito Alto","number": 4,"isFilled": false}
+    ],
+    "isLast": true
+  }
+]

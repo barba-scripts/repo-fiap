@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cadastro de missões</title>
+</head>
+
+<body>
+    <nav>
+        <button id="nav-voltar" onclick="back()"><i class="fa-solid fa-arrow-left"></i></button>
+    </nav>
+    <main>
+        <div class="top">
+            <header>
+                <h1>Cadastrar Missões</h1>
+                <h3></h3>
+            </header>
+
+            <secition class="missions-list">
+            </secition>
+        </div>
+
+        <footer>
+            <button id="add-mission" onclick="addMission()">+ Criar missão</button>
+            <button id="add-mission" onclick="getIaMissions()">Recomendações</button>
+        </footer>
+    </main>
+
+    <article class="bottomSheet" id="bottomSheet">
+        <header><i class="fa-solid fa-trash"></i> <i class="fa-solid fa-xmark"></i></header>
+        <h2 id="sheet-title"></h2>
+        <!-- <p id="sheet-message"></p> -->
+        <section id="inputs">
+            <input type="text" placeholder="Nome da missão" id="mission-name">
+            <div class="nvl-section">
+                <p>Nivel</p>
+                <div class="nvl-options">
+                    <button type="button" onclick="onClickNivelButton(1)">Nivel 1</button>
+                    <button type="button" onclick="onClickNivelButton(2)">Nivel 2</button>
+                    <button type="button" onclick="onClickNivelButton(3)">Nivel 3</button>
+                </div>
+            </div>
+            <input type="text" placeholder="Metrica desenvolvida nessa missão" id="mission-metric">
+            <input type="text" placeholder="Descreva aqui a missão" id="mission-description">
+        </section>
+        <div class="buttons">
+            <button id="btn-cancel">Cancelar</button>
+            <button id="btn-confirm">Salvar</button>
+        </div>
+    </article>
+
+    <article class="confirmationBottomSheet" id="confirmationBottomSheet">
+        <header><i class="fa-solid fa-xmark" onclick="closeConfirmationBottomSheet()"></i></header>
+        <h2>Deseja salvar suas alterações?</h2>
+        <p>No caso de sair sem salvar as alterações serão perdidas.</p>
+        <div class="buttons">
+            <button id="confirmation-btn-cancel" onclick="closeConfirmationBottomSheet()">Sair</button>
+            <button id="confirmation-btn-confirm" onclick="backPage()">Salvar</button>
+        </div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

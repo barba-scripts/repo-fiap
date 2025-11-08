@@ -1,0 +1,93 @@
+@import url("/global.style.css");
+
+body {
+    padding: 4vh;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+
+        .date-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                gap: 1vh;
+
+                label {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    color: #0F172A;
+                }
+
+                .error-message {
+                    font-size: 0.9rem;
+                    color: #EF4444;
+                    min-height: 1.2em;
+                    margin-top: 0.5vh;
+                }
+
+                input {
+                    padding: 2vh;
+                    font-size: 1rem;
+                    border: 1px solid #E2E8F0;
+                    border-radius: 8px;
+                    color: black;
+                    outline: none;
+                    transition: border-color 0.2s, background-color 0.2s;
+                    font-family: inherit;
+
+                    &::placeholder {
+                        color: #94A3B8;
+                    }
+
+                    &:focus {
+                        border-color: #0F172A;
+                        background-color: white;
+                    }
+
+                    /* Estilização para input type="date" */
+                    &[type="date"] {
+                        cursor: pointer;
+
+                        &::-webkit-calendar-picker-indicator {
+                            cursor: pointer;
+                            opacity: 0.6;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        button {
+            background-color: rgb(14, 23, 42);
+            border: none;
+            color: white;
+            padding: 2vh;
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            &:hover:not(:disabled) {
+                background-color: rgb(30, 41, 59);
+            }
+
+            &:disabled,
+            &.disabled {
+                background-color: #E2E8F0;
+                color: #94A3B8;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

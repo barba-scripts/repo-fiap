@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../suitability-form-store/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js" defer></script>
+  <title>Suitability Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <button class="icon-button outline" onclick="history.back()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+            <path d="M11.3337 5H0.666992M0.666992 5L4.66699 9M0.666992 5L4.66699 1" stroke="currentColor"
+              stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="icon-button normal" onclick="window.location='/gerente-fora-de-ciclo/menu/index.html'">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 8H14M2 4H14M2 12H14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div id="heading">
+        <h1>SuitAbility <span>bruno</span></h1>
+        <h2 id="question"></h2>
+        <div id="step"></div>
+      </div>
+      <form action="">
+        <fieldset id="survey-question">
+        </fieldset>
+      </form>
+      <div class="button-container">
+        <button id="back" onclick="/suitability-form/index.html" class="button outline">Voltar</button>
+        <button id="send" class="button normal">Continuar</button>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+    "actions": [
+        {
+            "title": "Definir recompensas",
+            "status": 3,
+            "screen": "../add-reward/index.html"
+        },
+        {
+            "title": "Preencher SuitAbility da loja",
+            "status": 3,
+            "screen": "../suitability-form-store/index.html"
+        },
+        {
+            "title": "Preencher SuitAbility dos colaboradores",
+            "status": 3,
+            "screen": "../crew-list-suitability/index.html"
+        }
+    ]
+}

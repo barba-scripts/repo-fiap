@@ -1,0 +1,66 @@
+@import url("/global.style.css");
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#step {
+  background-color: var(--secondary);
+  padding: 0.125rem 0.75rem;
+  width: min-content;
+  border-radius: 1rem;
+  color: var(--secondary-foreground);
+  font-size: var(--fsize-xs);
+  font-weight: var(--fw-semibold);
+}
+
+#survey-question {
+  &.multi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+}
+
+.multi .option-item {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+}
+
+#survey-question input[type="radio"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 1px solid var(--primary);
+  background: var(--background);
+  border: 2px solid var(--background);
+  border-radius: 100%;
+  width: 1em;
+  height: 1em;
+}
+
+#survey-question input[type="radio"]:checked {
+  background: var(--primary);
+}
+
+br {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border);
+}
+
+.option-item {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.75rem;
+  color: var(--foreground);
+  font-size: var(--fsize-base);
+  font-weight: var(--fw-medium);
+  border-radius: 6px;
+
+  &.selected {
+    background-color: var(--bg-muted-50);
+  }
+}

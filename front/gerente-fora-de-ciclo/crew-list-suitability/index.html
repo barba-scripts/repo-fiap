@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  <title>Lista de colaboradores </title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <button class="icon-button outline" onclick="location='/gerente-fora-de-ciclo/create-cycle/index.html'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+            <path d="M11.3337 5H0.666992M0.666992 5L4.66699 9M0.666992 5L4.66699 1" stroke="currentColor"
+              stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="icon-button normal" onclick="window.location='/gerente-fora-de-ciclo/menu/index.html'">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 8H14M2 4H14M2 12H14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div id="heading">
+        <h1>Lista de colaboradores</h1>
+        <h2>Colaboradores que não tem SuitAbility</h2>
+      </div>
+      <div class="table-container">
+        <table id="crew-table">
+          <thead>
+            <tr>
+              <th>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M13.3337 14C13.3337 13.0696 13.3337 12.6044 13.2188 12.2259C12.9603 11.3736 12.2934 10.7067 11.4411 10.4482C11.0626 10.3333 10.5974 10.3333 9.66699 10.3333H6.33366C5.40328 10.3333 4.9381 10.3333 4.55956 10.4482C3.7073 10.7067 3.04035 11.3736 2.78182 12.2259C2.66699 12.6044 2.66699 13.0696 2.66699 14M11.0003 5C11.0003 6.65685 9.65718 8 8.00033 8C6.34347 8 5.00033 6.65685 5.00033 5C5.00033 3.34315 6.34347 2 8.00033 2C9.65718 2 11.0003 3.34315 11.0003 5Z"
+                    stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Nome</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td>
+                <span>Total</span>
+                <span>colaboradores</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="caption">
+                Lista de colaboradores
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <select class="form-select"></select>
+      <button class="button normal" id="continueButton"
+        onclick="window.location='/gerente-fora-de-ciclo/suitability-form-colaborador/index.html'">Continuar</button>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+[
+  {
+    "question": "Como foi o movimento de clientes neste mês?",
+    "answerType": "single",
+    "options": [
+      "Muito Baixo",
+      "Baixo",
+      "Médio",
+      "Alto",
+      "Muito Alto"
+    ]
+  },
+  {
+    "question": "Houve fatores externos que impactaram o desempenho?",
+    "answerType": "single",
+    "options": [
+      "Sim, de forma negativa",
+      "Sim, de forma positiva ",
+      "Não"
+    ]
+  },
+  {
+    "question": "Como avalia a performance geral da equipe no mês?",
+    "answerType": "single",
+    "options": [
+      "Muito abaixo das metas",
+      "Abaixo das metas",
+      "Dentro das metas",
+      "Acima das metas",
+      "Muito acima das metas"
+    ]
+  },
+  {
+    "question": "Como você descreveria o clima e engajamento da equipe?",
+    "answerType": "single",
+    "options": [
+      "Muito ruim",
+      "Ruim",
+      "Regular",
+      "Bom",
+      "Excelente"
+    ]
+  },
+  {
+    "question": "Qual área precisa de mais foco no próximo mês?",
+    "answerType": "single",
+    "options": [
+      "Cross-sell e venda adicional",
+      "Atendimento e experiência do cliente",
+      "Fidelização e CRM",
+      "Organização da loja",
+      "Agilidade no atendimento"
+    ]
+  },
+  {
+    "question": "Você recomendaria nossa loja a amigos?",
+    "answerType": "single",
+    "options": [
+      "Caiu muito",
+      "Caiu pouco",
+      "Manteve-se estável",
+      "Subiu pouco",
+      "Subiu muito"
+    ]
+  },
+  {
+    "question": "Como você avalia o ritmo de aprendizado desse colaborador?",
+    "answerType": "single",
+    "options": [
+     "Abaixo de 50",
+     "Entre 50 e 69",
+     "Entre 70 e 84",
+     "Acima de 85"
+    ]
+  }
+]
