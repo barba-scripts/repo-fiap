@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoMoney - FIAP NEXT ON</title>
+    <link rel="stylesheet" href="global.style.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 1.2em;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .menu-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .menu-card h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .menu-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-card li {
+            margin: 8px 0;
+        }
+        .menu-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1em;
+            display: block;
+            padding: 10px 12px;
+            border-radius: 6px;
+            transition: all 0.3s;
+            border-left: 3px solid transparent;
+        }
+        .menu-card a:hover {
+            background-color: #f0f4ff;
+            border-left-color: #667eea;
+            padding-left: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 InfoMoney</h1>
+        <p class="subtitle">Sistema de Gestão - FIAP NEXT ON</p>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h2>👤 Colaborador em Ciclo</h2>
+                <ul>
+                    <li><a href="/colaborador-em-ciclo/home/">🏠 Home</a></li>
+                    <li><a href="/colaborador-em-ciclo/menu/">📋 Menu</a></li>
+                    <li><a href="/colaborador-em-ciclo/profile/">👤 Perfil</a></li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h2>👤 Colaborador Fora de Ciclo</h2>
+                <ul>
+                    <li><a href="/colaborador-fora-de-ciclo/home/">🏠 Home</a></li>
+                    <li><a href="/colaborador-fora-de-ciclo/menu/">📋 Menu</a></li>
+                    <li><a href="/colaborador-fora-de-ciclo/profile/">👤 Perfil</a></li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h2>👨‍💼 Gerente em Ciclo</h2>
+                <ul>
+                    <li><a href="/gerente-em-ciclo/home/">🏠 Home</a></li>
+                    <li><a href="/gerente-em-ciclo/menu/">📋 Menu</a></li>
+                    <li><a href="/gerente-em-ciclo/profile/">👤 Perfil</a></li>
+                    <li><a href="/gerente-em-ciclo/mission-list/">🎯 Lista de Missões</a></li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h2>👨‍💼 Gerente Fora de Ciclo</h2>
+                <ul>
+                    <li><a href="/gerente-fora-de-ciclo/home/">🏠 Home</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/menu/">📋 Menu</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/profile/">👤 Perfil</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/create-cycle/">🔄 Criar Ciclo</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/crew-list/">👥 Lista de Equipe</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/mission-register/">➕ Cadastrar Missão</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/MissionHub/">🎯 Mission Hub</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/add-reward/">🏆 Adicionar Recompensa</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/add-cycle-date/">📅 Configurar Data do Ciclo</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/crew-list-suitability/">📊 Suitability - Equipe</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/suitability-form-colaborador/">📝 Suitability - Formulário Colaborador</a></li>
+                    <li><a href="/gerente-fora-de-ciclo/suitability-form-store/">🏪 Suitability - Formulário Loja</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
