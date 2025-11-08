@@ -113,5 +113,5 @@ saveButton.addEventListener('click', function (e) {
         return;
     }
 
-    window.location='/gerente-fora-de-ciclo/missionHub/index.html'
+    window.location='/gerente-fora-de-ciclo/MissionHub/index.html'
 });
